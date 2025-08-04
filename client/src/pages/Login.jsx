@@ -25,7 +25,7 @@ const Login = () => {
 
   const loginDemoUser = async () => {
     const data = {
-      email: 'test@test.com',
+      email: 'test@gmail.com',
       password: 'secret123',
     };
     try {
