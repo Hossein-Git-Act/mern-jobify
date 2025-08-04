@@ -9,9 +9,9 @@ import {
 import rateLimit from 'express-rate-limit';
 
 const apiLimiter = rateLimit({
-  windowMs: 60 * 1000,
+  windowMs:1000,
   max:1,
-  message:{msg:'API rate limit exceeded , retry in 15 minutes '}
+  message:{msg:'API rate limit exceeded , retry in 1 minutes '}
 })
 
 router.post('/register', apiLimiter, validateRegisterInput, register);
