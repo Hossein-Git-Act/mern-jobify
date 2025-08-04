@@ -9,7 +9,7 @@ import {
 import rateLimit from 'express-rate-limit';
 
 const apiLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
+  windowMs: 60 * 1000,
   max:1,
   message:{msg:'API rate limit exceeded , retry in 15 minutes '}
 })
